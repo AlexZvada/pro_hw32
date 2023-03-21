@@ -1,6 +1,6 @@
 const initialValue = {
     count: 0
-}
+};
 
 export const countReducer = (state = initialValue, action) =>{
     switch (action.type) {
@@ -20,5 +20,5 @@ export const countReducer = (state = initialValue, action) =>{
       default:
         return state
     }
-}
+};
 

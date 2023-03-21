@@ -1,13 +1,14 @@
-import Button from './Button'
+import Button from './Button';
 import { useDispatch, useSelector } from 'react-redux';
 import Auth from './Auth';
+
 const Counter = () => {
     const dispatch = useDispatch()
     const state = useSelector(({count}) => count);
     console.log(state);
     const increment = () => {
         dispatch({ type: "Increment" });
-    }
+    };
     const decrement = () => {
       dispatch({ type: "Decrement" });
     };
@@ -25,4 +26,4 @@ const Counter = () => {
     );
 }
 
-export default Counter
+export default Counter;

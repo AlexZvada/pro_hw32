@@ -1,13 +1,13 @@
 import { useDispatch, useSelector } from "react-redux";
 import Button from "./Button";
 const Auth = () => {
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
     const state = useSelector(({auth}) => auth);
     const login = () => {
-        dispatch({type: 'Login'})
+        dispatch({type: 'Login'});
     }
     const logout = () => {
-        dispatch({type: 'Logout'})
+        dispatch({type: 'Logout'});
     }
     return <div>
         <h2>
@@ -19,4 +19,4 @@ const Auth = () => {
     </div>
 }
 
-export default Auth
+export default Auth;
